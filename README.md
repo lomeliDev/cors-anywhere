@@ -20,7 +20,7 @@ var host = process.env.HOST || '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 8080;
 
-var cors_proxy = require('cors-anywhere');
+var cors_proxy = require('@lomelidev/cors-anywhere');
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
     requireHeader: ['origin', 'x-requested-with'],
@@ -160,7 +160,7 @@ node server.js
 
 ## License
 
-Copyright (C) 2013 - 2016 Rob Wu <rob@robwu.nl>
+Copyright (C) 2013 - 2020 Miguel Lomeli <miguel@lomeli.io>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
